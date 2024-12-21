@@ -40,6 +40,8 @@ const UseStateGotcha = () => {
   const [email, setEmail] = useState('')
   const [wageMonthly, setwageMontly] = useState(0)
 
+  // const [id, setID]
+
   const addOne = () => {
     setValue(value + 1)
   }
@@ -53,13 +55,17 @@ const UseStateGotcha = () => {
 
     newStudentsList.push({
       id: uuidv4(),
-      name,
-      age,
+      name: name,
+      age: age,
       email,
       wageMonthly: wageMonthly,
     })
 
     setStudent(newStudentsList)
+    setName('')
+    setAge('')
+    setEmail('')
+    setwageMontly('')
   }
   useEffect(() => {
     console.log('hello')
@@ -77,21 +83,25 @@ const UseStateGotcha = () => {
         <input
           type="text"
           placeholder="name"
+          value={name}
           onChange={(e) => setName(e.target.value)}
         ></input>
         <input
           type="number"
           placeholder="age"
+          value={age}
           onChange={(e) => setAge(Number(e.target.value))}
         ></input>
         <input
           type="email"
           placeholder="email"
+          value={email}
           onChange={(e) => setEmail(e.target.value)}
         ></input>
         <input
           type="text"
           placeholder="wageMonthly"
+          value={wageMonthly}
           onChange={(e) => setwageMontly(e.target.value)}
         ></input>
       </div>
