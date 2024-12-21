@@ -1,12 +1,12 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
 const ShortCircuitExamples = () => {
   // falsy
-  const [text, setText] = useState('');
+  const [text, setText] = useState('')
   // truthy
-  const [name, setName] = useState('susan');
-  const [user, setUser] = useState({ name: 'john' });
-  const [isEditing, setIsEditing] = useState(false);
+  const [name, setName] = useState('susan')
+  const [user, setUser] = useState({ name: 'john' })
+  const [isEditing, setIsEditing] = useState(false)
 
   return (
     <div>
@@ -25,7 +25,7 @@ const ShortCircuitExamples = () => {
       {user && <SomeComponent name={user.name} />}
       <h2 style={{ margin: '1rem 0' }}>Ternary Operator</h2>
       {/* inside element */}
-      <button className='btn'>{isEditing ? 'edit' : 'add'}</button>
+      <button className="btn">{isEditing ? 'edit' : 'add'}</button>
       {/* toggle elements/components */}
       {user ? (
         <div>
@@ -37,15 +37,15 @@ const ShortCircuitExamples = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
 const SomeComponent = ({ name }) => {
   return (
     <div>
       <h4>hello there, {name}</h4>
-      <button className='btn'>log out</button>
+      <button className="btn">log out</button>
     </div>
-  );
-};
-export default ShortCircuitExamples;
+  )
+}
+export default ShortCircuitExamples
