@@ -60,8 +60,6 @@ const UseStateGotcha = () => {
       email,
       wageMonthly: wageMonthly,
     })
-    
-    
 
     setStudent(newStudentsList)
     setName('')
