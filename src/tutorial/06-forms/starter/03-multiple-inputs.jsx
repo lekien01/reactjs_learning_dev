@@ -12,7 +12,13 @@ const MultipleInputs = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(user)
+    setUser({
+      name: '',
+      email: '',
+      password: '',
+    })
   }
+
   return (
     <div>
       <form className="form" onSubmit={handleSubmit}>
@@ -25,7 +31,7 @@ const MultipleInputs = () => {
           <input
             type="text"
             className="form-input"
-            id="name"
+            // id="name"
             name="name"
             value={user.name}
             onChange={handleChange}
