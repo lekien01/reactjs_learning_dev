@@ -3,8 +3,8 @@ import Example from './tutorial/04-project-structure/starter/Example'
 import Navbar from './tutorial/04-project-structure/starter/Navbar'
 import { Home, About } from './tutorial/04-project-structure/starter/Pages'
 import List from './tutorial/05-leverage-javascript/starter/List'
-import Final from './tutorial/06-forms/starter/01-controlled-inputs'
-import Starter from './tutorial/08-custom-hooks/starter/02-fetch-data'
+import Final from './tutorial/09-context-api/final/context/Navbar'
+import Starter from './tutorial/09-context-api/starter/Navbar'
 function App() {
   return (
     <div className="container">
@@ -13,8 +13,9 @@ function App() {
       <About />
       <Example />
       <List /> */}
+      <Final />
       <Starter />
-      {/* <Final /> */}
+
       {/* <h2>Advanced React</h2> */}
     </div>
   )
