@@ -4,7 +4,7 @@ import Navbar from './tutorial/04-project-structure/starter/Navbar'
 import { Home, About } from './tutorial/04-project-structure/starter/Pages'
 import List from './tutorial/05-leverage-javascript/starter/List'
 import Final from './tutorial/09-context-api/final/context/Navbar'
-import Starter from './tutorial/10-useReducer/starter/01-useReducer'
+import Starter from './tutorial/11-performance/starter/03-hooks/index'
 function App() {
   return (
     <div className="container">
